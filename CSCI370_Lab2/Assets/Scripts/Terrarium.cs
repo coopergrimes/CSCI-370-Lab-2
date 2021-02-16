@@ -6,12 +6,15 @@ public class Terrarium : MonoBehaviour
 {
 
     public GameObject particles;
+    public GameObject audio;
     private ParticleSystem ps;
+    private AudioSource asource;
 
     // Start is called before the first frame update
     void Start()
     {
         ps = particles.GetComponent<ParticleSystem>();
+        asource = audio.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,5 +26,6 @@ public class Terrarium : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ps.Play();
+        asource.Play();
     }
 }
