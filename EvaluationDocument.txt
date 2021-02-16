@@ -1,1 +1,13 @@
+Our game was deisnged to have a snail that was able to get out of their enclosure. The snail is tasked to find 
+his enclosure before his owner gets home. The snail moves by using arrow keys. Some areas are blocked off, and there are doors
+that lead to different scenes to explore. There are also objects that give dialogue reminding the snail to find its way back to its enclosure.
 
+
+Mitchell: 
+	This project was fun for me because using the tile maps was pretty cool. I liked how everything fit together, and how unity made 
+	it easy to work with everything. I also liked figuring out how to transition between scenes, becuase it will help me alot with 
+	later games. Some things that were hard were managing scenes. I was confused on how the event system and game manager tranfered
+	to each new scene, but i think i eventually figured it out.
+	
+	I worked on created each scene and makeing links between them. I also worked on getting the player to move around and having 
+	the camera follow. I also worked on getting the game to restart when the snail reached its destination. 	
