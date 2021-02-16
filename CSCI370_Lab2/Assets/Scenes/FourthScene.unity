@@ -1497,6 +1497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 2027091529}
   audio: {fileID: 1028309958}
+  toTravel: MainMenu
 --- !u!61 &658152171
 BoxCollider2D:
   m_ObjectHideFlags: 0
