@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -51,11 +52,17 @@ public class GameManager : MonoBehaviour
     public void StartDialog(string text)
     {
         DialogBox.SetActive(true);
+        DialogText.GetComponent<TextMeshProUGUI>().text = text;
     }
 
     public void HideDialog()
     {
         DialogBox.SetActive(false);
+    }
+
+    public void foundHome()
+    {
+
     }
 
     IEnumerator ColorLerp(Color endValue, float duration)
