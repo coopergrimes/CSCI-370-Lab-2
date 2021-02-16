@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            Destroy(events);
+            Destroy(canvas);
         }
     }
 
@@ -101,5 +103,13 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2f));
+    }
+
+    public void GameOver()
+    {
+        startButton.SetActive(true);
+        StopAllCoroutines();
+        HideDialog();
+        StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 2f));
     }
 }
