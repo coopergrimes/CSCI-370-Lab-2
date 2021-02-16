@@ -61,6 +61,11 @@ public class GameManager : MonoBehaviour
         sprite.color = endValue;
     }
 
+    public void Travel(string scene)
+    {
+        StartCoroutine(LoadYourAsyncScene(scene));
+    }
+
     IEnumerator LoadYourAsyncScene(string scene)
     {
         // The Application loads the Scene in the background as the current Scene runs.
