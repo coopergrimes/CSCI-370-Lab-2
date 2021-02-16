@@ -6,6 +6,8 @@ public class PlayerMove : MonoBehaviour
 {
 
     Rigidbody2D body;
+    SpriteRenderer sprite;
+
 
     private float horz, vert;
     private float moveLimit = 0.7f;
@@ -14,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -31,6 +34,8 @@ public class PlayerMove : MonoBehaviour
             horz *= moveLimit;
             vert *= moveLimit;
         }
+        
         body.velocity = new Vector2(horz * speed, vert * speed);
+        sprite.flipX = body.velocity.x < 0 ? true : false;
     }
 }
