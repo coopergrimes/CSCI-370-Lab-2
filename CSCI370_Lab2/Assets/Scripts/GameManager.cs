@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject startButton;
     public GameObject backgroundImage;
-    public GameObject canvas;
     public GameObject events;
+    public GameObject canvas;
+    public GameObject DialogBox;
+    public GameObject DialogText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +46,16 @@ public class GameManager : MonoBehaviour
     {
         startButton.SetActive(false);
         StartCoroutine(LoadYourAsyncScene("FirstScene"));
+    }
+
+    public void StartDialog(string text)
+    {
+        DialogBox.SetActive(true);
+    }
+
+    public void HideDialog()
+    {
+        DialogBox.SetActive(false);
     }
 
     IEnumerator ColorLerp(Color endValue, float duration)
