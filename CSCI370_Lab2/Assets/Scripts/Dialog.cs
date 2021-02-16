@@ -13,7 +13,7 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        words.Add("In need to find my home before my owner returns and sees me out!");
+        words.Add("I need to find my home before my owner returns and sees me out!");
         words.Add("This is not my home. I need to find my home.");
         words.Add("I do not belong here.");
         words.Add("I need to find my way back home.");
