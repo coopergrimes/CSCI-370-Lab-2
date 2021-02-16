@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondScene.unity
     guid: acc6e3e9e9c3695479aa3aff53c0431d
+  - enabled: 1
+    path: Assets/Scenes/ThirdScene.unity
+    guid: 3a13ffb3c5eda974ca5f6d953743372b
   m_configObjects: {}
