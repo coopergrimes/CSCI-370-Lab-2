@@ -3282,8 +3282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 0}
   backgroundImage: {fileID: 0}
-  events: {fileID: 0}
-  canvas: {fileID: 0}
+  events: {fileID: 1565023571}
+  canvas: {fileID: 47074702}
   DialogBox: {fileID: 1655461006}
   DialogText: {fileID: 1475851874}
 --- !u!4 &1205712687

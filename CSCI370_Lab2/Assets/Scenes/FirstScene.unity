@@ -2308,7 +2308,7 @@ GameObject:
   - component: {fileID: 848113233}
   - component: {fileID: 848113232}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DialogText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3768,8 +3768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 0}
   backgroundImage: {fileID: 0}
-  events: {fileID: 0}
-  canvas: {fileID: 0}
+  events: {fileID: 228268778}
+  canvas: {fileID: 85102877}
   DialogBox: {fileID: 232149185}
   DialogText: {fileID: 848113230}
 --- !u!4 &1166964324
