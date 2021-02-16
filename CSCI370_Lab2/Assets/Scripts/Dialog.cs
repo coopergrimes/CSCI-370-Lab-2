@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Dialog : MonoBehaviour
 {
 
-    int num = 0;
     string s = "";
+    int num = 0;
     List<string> words = new List<string>();
 
     // Start is called before the first frame update
@@ -28,9 +29,9 @@ public class Dialog : MonoBehaviour
 
     private void getNextLine()
     {
-        num %= words.Count;
+        System.Random rand = new System.Random();
+        num = rand.Next(words.Count);
         s = words[num];
-        num += 1;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
